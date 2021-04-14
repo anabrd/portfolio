@@ -13,7 +13,7 @@ function App() {
     {
       id: 1,
       title: "About",
-      description: "lorem ipsum",
+      description: "I am a full-stack web developer with strong focus on front-end technologies.",
       subheading: "Tools & technologies",
       content: [["HTML", "CSS", "Sass", "Bootstrap"], 
                 ["JavaScript","JQuery", "React.js", "Redux"], 
@@ -24,7 +24,7 @@ function App() {
     {
       id: 2,
       title: "Projects",
-      description: "lorem ipsum",
+      description: "Portfolio of projects.",
       content: [
         {
           name: "Time Tracker App",
@@ -45,7 +45,7 @@ function App() {
           links: ["TBA", "TBA"]
         },
         {
-          name: "Know Flow",
+          name: "TBA",
           description: "Platform for sharing personal learning roadmaps.",
           tools: "React.js, TBA",
           links: ["TBA", "TBA"]
@@ -56,43 +56,48 @@ function App() {
       id: 3,
       title: "Contact",
       description: "Get in touch.",
-      content: [
-        {
-          contactForm: 
-          [
-            {
-              label: "Your Name",
-              placeholder: "Please enter your name"
-            },
-            {
-              label: "Your Email",
-              placeholder: "Please enter your email"
-            },
-            {
-              label: "Your Message",
-              placeholder: "Please enter your message"
-            }
-          ]
-        },
-        {
-          contactLinks: 
-          [
-            {
-              name: "CV",
-              link: "TBA"
-            },
-            {
-              name: "LinkedIn",
-              link: "https://www.linkedin.com/in/anabrdar/"
-            },
-            {
-              name: "GitHub",
-              link: "https://github.com/anabrd"
-            }
-          ] 
-        }
-      ]
-    }
+      contactForm: 
+        [
+          {
+            name: "name",
+            label: "Your Name",
+            type: "text",
+            placeholder: "Please enter your name"
+          },
+          {
+            name: "email",
+            label: "Your Email",
+            type: "email",
+            placeholder: "Please enter your email"
+          },
+          {
+            name: "message",
+            label: "Your Message",
+            type: "text",
+            placeholder: "Please enter your message"
+          },
+          {
+            label: "Submit",
+            type: "submit",
+            placeholder: ""
+          }
+        ],
+      contactLinks: 
+        [
+          {
+            name: "CV",
+            path: "TBA"
+          },
+          {
+            name: "LinkedIn",
+            path: "https://www.linkedin.com/in/anabrdar/"
+          },
+          {
+            name: "GitHub",
+            path: "https://github.com/anabrd"
+          }
+        ] 
+      }
   ]
 
 
@@ -174,19 +179,21 @@ function App() {
     }
   ]
 
-  const [activeLang, setActiveLang] = useState(dataEN);
+  const [activeData, setActiveData] = useState(dataEN);
 
-  
 
   return (
     <Router>
-      <Navbar data = {dataEN}/>
+      <Navbar data = {activeData}/>
       <main>
         <Landing />
-        <About data = {dataEN}/>
-        <Projects data = {dataEN}/>
-        <Contact data = {dataEN}/>
+        <About data = {activeData}/>
+        <Projects data = {activeData}/>
+        <Contact data = {activeData}/>
       </main>
+      <footer>
+        ⒸAna Brdar 2021.
+      </footer>
     </Router>
   );
 }

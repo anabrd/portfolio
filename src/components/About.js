@@ -1,12 +1,17 @@
 function About(props) {
 
-    let content = props.data.filter(item => item.id == 1);
-    content = content[0];
+    let data = props.data.filter(item => item.id == 1)[0];
 
+    let tools = data.content.map(list => 
+                                    <ul>
+                                        {list.map(item => <li>{item}</li>)}
+                                    </ul>);
     return (
-        <section id = {content.title}>
-            <h2>{content.title}</h2>
-            <p>{content.description}</p>
+        <section id = {data.title}>
+            <h2>{data.title}</h2>
+            <p>{data.description}</p>
+            <h3>{data.subheading}</h3>
+            <div>{tools}</div>
         </section>
     )
 }
