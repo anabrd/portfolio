@@ -2,7 +2,7 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 import { useState, useEffect } from 'react'
-import { Navbar } from './components/Navbar'
+import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import About from './components/About'
 import Projects from './components/Projects'

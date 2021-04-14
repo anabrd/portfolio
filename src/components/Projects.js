@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -13,10 +12,11 @@ function Projects(props) {
             <p>{project.description}</p>
             <p>{project.tools}</p>
             <div className = "projects-links-wrapper">
-                <FontAwesomeIcon icon={faGithub} /> 
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
+                <a href={project.links[0]} target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href={project.links[1]} target="_blank"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
             </div>
         </div>)
+
     return (
         <section id = {data.title} style = {{height: "900px"}} >
             <h2>{data.title}</h2>
