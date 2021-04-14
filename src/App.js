@@ -3,13 +3,12 @@ import {
 } from "react-router-dom";
 import { useState } from 'react'
 import { Navbar } from './components/Navbar'
-import Section from './components/Section'
 import Landing from './components/Landing'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 function App() {
-
-  const [activeLang, setActiveLang] = useState("english");
-
   let dataEN = [
     {
       id: 1,
@@ -175,14 +174,18 @@ function App() {
     }
   ]
 
-  let sectionOutput = dataEN.map(sectionData => <Section id = {sectionData.title} sectionData = {sectionData} />)
+  const [activeLang, setActiveLang] = useState(dataEN);
+
+  
 
   return (
     <Router>
       <Navbar data = {dataEN}/>
       <main>
         <Landing />
-        {sectionOutput}
+        <About data = {dataEN}/>
+        <Projects data = {dataEN}/>
+        <Contact data = {dataEN}/>
       </main>
     </Router>
   );
