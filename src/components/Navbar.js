@@ -9,8 +9,8 @@ export const Navbar = (props) => {
     return (
         <nav>
             {links}
-            <NavHashLink to="/" onClick={() => console.log("ok")}>
-                DE
+            <NavHashLink to="/" onClick={props.activeLang == "DE" ? () => props.setActiveLang("EN") : () => props.setActiveLang("DE")}>
+                {props.activeLang == "DE" ? "EN" : "DE"}
             </NavHashLink> 
         </nav>
     )

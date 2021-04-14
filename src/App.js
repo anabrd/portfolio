@@ -1,7 +1,7 @@
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import Landing from './components/Landing'
 import About from './components/About'
@@ -106,7 +106,7 @@ function App() {
       id: 1,
       title: "Über Mich",
       description: "lorem ipsum",
-      subheading: "Tools & technologies",
+      subheading: "Werkzeuge",
       content: [["html", "css", "sass", "bootstrap"], 
                 ["javascript","jquery", "react.js", "redux"], 
                 ["node.js", "express", "mongoDB"],
@@ -164,7 +164,7 @@ function App() {
       ],
       contactLinks: [
         {
-          name: "CV",
+          name: "Lebenslauf",
           link: "TBA"
         },
         {
@@ -179,12 +179,24 @@ function App() {
     }
   ]
 
+  const [activeLang, setActiveLang] = useState("EN");
   const [activeData, setActiveData] = useState(dataEN);
 
+  useEffect(() => {
+    if (activeLang == "EN") {
+      setActiveData(dataEN)
+    } else if (activeLang == "DE") {
+      setActiveData(dataDE)
+    }
+
+  }, [activeLang])
 
   return (
     <Router>
-      <Navbar data = {activeData}/>
+      <Navbar 
+      data = {activeData} 
+      activeLang = {activeLang}
+      setActiveLang = {setActiveLang}/>
       <main>
         <Landing />
         <About data = {activeData}/>
