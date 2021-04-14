@@ -1,8 +1,13 @@
 function Section(props) {
+
+    let output = "CONTENT GOES HERE"
+
+    let content = props.sectionData;
+
     return (
-        <section>
-            <h2>{props.title}</h2>
-            {props.children}
+        <section style = {{height: "900px"}} >
+            <h2>{props.sectionData.title}</h2>
+            <p>{props.sectionData.description}</p>
         </section>
     )
 }

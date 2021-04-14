@@ -1,20 +1,17 @@
 import { NavHashLink } from 'react-router-hash-link';
 
-export const Navbar = () => {
+export const Navbar = (props) => {
+
+    let links = props.data.map(section => 
+                                <NavHashLink smooth to={{hash: section.title}}>
+                                    {section.title}
+                                </NavHashLink>);
     return (
         <nav>
-            <NavHashLink smooth to="/#about">
-                about
-            </NavHashLink>
-            <NavHashLink smooth to="/#projects">
-                projects
-            </NavHashLink>
-            <NavHashLink smooth to="/#contact">
-                contact
-            </NavHashLink>
-            {/* <NavHashLink>
-                de
-            </NavHashLink> */}
+            {links}
+            <NavHashLink to="/" onClick={() => console.log("ok")}>
+                DE
+            </NavHashLink> 
         </nav>
     )
 }
