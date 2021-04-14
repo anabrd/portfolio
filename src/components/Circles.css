@@ -1,0 +1,29 @@
+.circle-wrapper {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.circle-inner {
+    background: rgba(237, 74, 62, 0.83);
+    left: 1300px;
+    top: 111px;
+    z-index: 10;
+}
+
+.circle-outer:first-of-type {
+    background: var(--light);
+    left: 1415px;
+    top: 36px;
+}
+
+.circle-outer:last-of-type {
+    background: var(--light);
+    left: 1210px;
+    top: 179px;
+}

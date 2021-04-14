@@ -1,8 +1,15 @@
-function Landing() {
+import Circles from './Circles'
+import './Landing.css'
+
+function Landing(props) {
+
+    let data = props.data.filter(item => item.id == 0)[0];
+
     return (
-        <section>
-            <h1>Ana Brdar</h1>
-            <h3>Berlin-based web developer</h3> 
+        <section id={data.title.toLowerCase()}>
+            <Circles theme = "light"/>
+            <h1>{data.subheading}</h1>
+            <h3>{data.description}</h3> 
         </section>
     )
 }

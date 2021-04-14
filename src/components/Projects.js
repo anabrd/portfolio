@@ -18,10 +18,10 @@ function Projects(props) {
         </div>)
 
     return (
-        <section id = {data.title} style = {{height: "900px"}} >
-            <h2>{data.title}</h2>
+        <section id = {data.title}>
+            <h2>{data.heading}</h2>
             <p>{data.description}</p>
-            {<div className = "project-wrapper">{projects}</div>}
+            <div className = "project-wrapper">{projects}</div>
         </section>
     )
 }

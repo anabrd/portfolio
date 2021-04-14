@@ -1,3 +1,5 @@
+import Circles from './Circles';
+
 function Contact(props) {
 
     let data = props.data.filter(item => item.id == 3)[0];
@@ -13,13 +15,14 @@ function Contact(props) {
     </form>
 
     let contactLinks = 
-    <ul>
+    <ul className = "contact-links menu-vertical">
         {data.contactLinks.map(link => <li><a href={link.path}>{link.name}</a></li>)}
     </ul>
 
     return (
-        <section id = {data.title} style = {{height: "900px"}} >
-            <h2>{data.title}</h2>
+        <section id = {data.title}>
+            <Circles theme = "dark"/>
+            <h2>{data.heading}</h2>
             <p>{data.description}</p>
             {contactForm}
             {contactLinks}

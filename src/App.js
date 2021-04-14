@@ -7,12 +7,21 @@ import Landing from './components/Landing'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import './index.css'
 
 function App() {
   let dataEN = [
     {
+      id: 0,
+      title: "Landing",
+      heading: "",
+      subheading: "Ana Brdar",
+      description: "Berlin-based Web Developer"
+    },
+    {
       id: 1,
       title: "About",
+      heading: "About",
       description: "I am a full-stack web developer with strong focus on front-end technologies.",
       subheading: "Tools & technologies",
       content: [["HTML", "CSS", "Sass", "Bootstrap"], 
@@ -24,6 +33,7 @@ function App() {
     {
       id: 2,
       title: "Projects",
+      heading: "Projects",
       description: "Portfolio of projects.",
       content: [
         {
@@ -55,6 +65,7 @@ function App() {
     {
       id: 3,
       title: "Contact",
+      heading: "Contact",
       description: "Get in touch.",
       contactForm: 
         [
@@ -103,8 +114,16 @@ function App() {
 
   let dataDE = [
     {
+      id: 0,
+      title: "Landing",
+      heading: "",
+      subheading: "Ana Brdar",
+      description: "Full Stack Webentwicklerin"
+    },
+    {
       id: 1,
       title: "Über Mich",
+      heading: "Über Mich",
       description: "lorem ipsum",
       subheading: "Werkzeuge",
       content: [["html", "css", "sass", "bootstrap"], 
@@ -116,6 +135,7 @@ function App() {
     {
       id: 2,
       title: "Projekte",
+      heading: "Projekte",
       description: "lorem ipsum",
       content: [
         {
@@ -147,6 +167,7 @@ function App() {
     {
       id: 3,
       title: "Kontakt",
+      heading: "Kontakt",
       description: "Get in touch.",
       contactForm: [
         {
@@ -198,7 +219,7 @@ function App() {
       activeLang = {activeLang}
       setActiveLang = {setActiveLang}/>
       <main>
-        <Landing />
+        <Landing data = {activeData} />
         <About data = {activeData}/>
         <Projects data = {activeData}/>
         <Contact data = {activeData}/>
