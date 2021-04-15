@@ -9,16 +9,13 @@ function About(props) {
                                     </ul>);
     return (
         <section id={data.title}>
-            <h2 className="section-heading">{data.title}</h2>
-            <div className="about-wrapper">
-                <div>
+            <h2 className="section-heading">{data.heading}</h2>
                     <p>{data.description}</p>
-                </div>
                 <div className="tools-wrapper">
+                    <div className="circle-big"></div>
                     <h4>{data.subheading}</h4>
-                    <div>{tools}</div>
+                    <div className = "tools-list-wrapper">{tools}</div>
                 </div>
-            </div>
         </section>
     )
 }

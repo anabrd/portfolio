@@ -1,3 +1,64 @@
-.about-wrapper {
+#About {
+    position: relative;
+}
+
+#About p {
+    font-size: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 250px;
+    width: 600px;
+    word-break: break-word;
+    line-height: 40px;
+}
+
+
+.tools-list-wrapper {
     display: flex;
+}
+
+.tools-wrapper {
+    position: relative;
+    color: var(--light)
+}
+
+.tools-list-wrapper, .tools-wrapper > h4 {
+    position: absolute;
+    left: 1166px;
+}
+
+.tools-wrapper > h4 {
+    font-size: 45px;
+    top: -50px;
+    text-align: right;
+    width: 550px;
+}
+
+.tools-list-wrapper {
+    top: 33px;
+    width: 550px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.tools-list-wrapper ul {
+    border-top: 2px solid var(--light);
+    font-style: normal;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: right;
+    text-transform: lowercase;
+    width: 150px;
+    margin: 3%;
+}
+
+.circle-big {
+    background: var(--red);
+    position: absolute;
+    border-radius: 50%;
+    width: 1481px;
+    height: 1481px;
+    left: 966px;
+    top: -833px;
+    z-index: -10;
 }
