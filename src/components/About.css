@@ -1,8 +1,8 @@
-#About {
+#about {
     position: relative;
 }
 
-#About p {
+#about p {
     font-size: 25px;
     display: inline-block;
     position: absolute;
@@ -11,7 +11,6 @@
     word-break: break-word;
     line-height: 40px;
 }
-
 
 .tools-list-wrapper {
     display: flex;

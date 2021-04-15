@@ -5,7 +5,7 @@ export default function Navbar(props) {
 
     let links = props.data.map(section => 
                                 <li>
-                                    <NavHashLink smooth to={{hash: section.title}}>
+                                    <NavHashLink smooth to={{hash: section.title.toLowerCase()}}>
                                         {section.heading}
                                     </NavHashLink>
                                 </li>);

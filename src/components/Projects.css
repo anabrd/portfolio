@@ -1,0 +1,43 @@
+.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    width: 1500px;
+    margin: auto;
+}
+
+.project {
+    width: 650px;
+    border-left: 3px solid var(--dark);
+    font-size: 25px;
+    padding-left: 2%;
+    line-height: 50px;
+    margin: 2%;
+}
+
+.project > h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: lowercase;
+    margin-bottom: 2%;
+}
+
+.project span {
+    font-weight: bold;
+}
+
+.project a {
+    padding: 0 20px 0 0;
+}
+
+.project a,
+.project a:active,
+.project a:visited {
+    color: var(--red)
+}
+
+.project a:hover {
+    color: var(--blue)
+}
