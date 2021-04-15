@@ -4,7 +4,8 @@
   --blue: #0C478B;
   --red: #ED4A3E;
   font-family: 'Helvetica Neue';
-  color: var(--dark)
+  color: var(--dark);
+  scroll-snap-type: y mandatory;
 }
 
 /* General styling */
@@ -15,9 +16,11 @@
   box-sizing: border-box;
 }
 
+
 section {
   height: 100vh;
   padding: 2.5vh 2vw;
+  scroll-snap-align: start;
 }
 
 a {
