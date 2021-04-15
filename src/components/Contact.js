@@ -1,4 +1,5 @@
 import Circles from './Circles';
+import './Contact.css'
 
 function Contact(props) {
 
@@ -20,9 +21,9 @@ function Contact(props) {
     </ul>
 
     return (
-        <section id = {data.title}>
+        <section id = {data.title.toLowerCase()}>
             <Circles theme = "dark"/>
-            <h2>{data.heading}</h2>
+            <h2 className="section-heading">{data.heading}</h2>
             <p>{data.description}</p>
             {contactForm}
             {contactLinks}

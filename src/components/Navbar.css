@@ -1,0 +1,9 @@
+nav .menu-vertical {
+    color: var(--light);
+    border-right: 2px solid var(--light);
+}
+
+nav .menu-vertical a:visited,
+nav .menu-vertical a:active {
+    color: var(--light);
+}

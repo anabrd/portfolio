@@ -8,7 +8,7 @@ function Projects(props) {
 
     let projects = data.content.map(project =>
         <div>
-            <h4>{project.name}</h4>
+            <h5>{project.name}</h5>
             <p>{project.description}</p>
             <p>{project.tools}</p>
             <div className = "projects-links-wrapper">
@@ -19,7 +19,7 @@ function Projects(props) {
 
     return (
         <section id = {data.title}>
-            <h2>{data.heading}</h2>
+            <h2 className="section-heading">{data.heading}</h2>
             <p>{data.description}</p>
             <div className = "project-wrapper">{projects}</div>
         </section>

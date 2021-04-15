@@ -1,3 +1,5 @@
+import './About.css'
+
 function About(props) {
 
     let data = props.data.filter(item => item.id == 1)[0];
@@ -7,10 +9,16 @@ function About(props) {
                                     </ul>);
     return (
         <section id={data.title}>
-            <h2>{data.title}</h2>
-            <p>{data.description}</p>
-            <h3>{data.subheading}</h3>
-            <div>{tools}</div>
+            <h2 className="section-heading">{data.title}</h2>
+            <div className="about-wrapper">
+                <div>
+                    <p>{data.description}</p>
+                </div>
+                <div className="tools-wrapper">
+                    <h4>{data.subheading}</h4>
+                    <div>{tools}</div>
+                </div>
+            </div>
         </section>
     )
 }

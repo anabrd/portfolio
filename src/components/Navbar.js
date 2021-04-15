@@ -1,4 +1,5 @@
 import { NavHashLink } from 'react-router-hash-link';
+import './Navbar.css'
 
 export default function Navbar(props) {
 
