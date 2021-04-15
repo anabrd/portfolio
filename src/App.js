@@ -10,6 +10,7 @@ import Contact from './components/Contact'
 import './index.css'
 
 function App() {
+
   let dataEN = [
     {
       id: 0,
@@ -110,7 +111,6 @@ function App() {
         ] 
       }
   ]
-
 
   let dataDE = [
     {
@@ -214,19 +214,18 @@ function App() {
 
   return (
     <Router>
-      <Navbar 
-      data = {activeData} 
-      activeLang = {activeLang}
-      setActiveLang = {setActiveLang}/>
+      <header>
+        <Navbar 
+        data = {activeData} 
+        activeLang = {activeLang}
+        setActiveLang = {setActiveLang}/>
+      </header>
       <main>
         <Landing data = {activeData} />
         <About data = {activeData}/>
         <Projects data = {activeData}/>
         <Contact data = {activeData}/>
       </main>
-      <footer>
-        ⒸAna Brdar 2021.
-      </footer>
     </Router>
   );
 }

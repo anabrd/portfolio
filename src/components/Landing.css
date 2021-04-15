@@ -49,6 +49,7 @@ h3 {
     font-weight: normal;
     font-size: 35px;
     line-height: 40px;
+    text-transform: lowercase;
     left: 108px;
     top: 640px;
     opacity: 0;

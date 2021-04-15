@@ -9,8 +9,8 @@ function Contact(props) {
     <form> 
         {data.contactForm.map(input =>
         <div>
-            <label for={input.name}>{input.name}</label>
             <input id={input.name} type={input.type} placeholder={input.placeholder}></input>
+            <label for={input.name}>{input.name}</label>
         </div>)
         }
     </form>

@@ -17,7 +17,6 @@
   box-sizing: border-box;
 }
 
-
 section {
   height: 100vh;
   padding: 2.5vh 2vw;
@@ -47,8 +46,6 @@ ul {
 .section-heading {
   width: 642px;
   height: 115px;
-  left: 50px;
-  top: 89px;
   font-family: Helvetica;
   font-style: normal;
   font-weight: bold;
