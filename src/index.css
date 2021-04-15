@@ -4,6 +4,7 @@
   --blue: #0C478B;
   --red: #ED4A3E;
   font-family: 'Helvetica Neue';
+  color: var(--dark)
 }
 
 * {

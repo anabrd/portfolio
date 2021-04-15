@@ -218,7 +218,7 @@ function App() {
       data = {activeData} 
       activeLang = {activeLang}
       setActiveLang = {setActiveLang}/>
-      <main>
+      <main style = {{transition: "0.2"}}>
         <Landing data = {activeData} />
         <About data = {activeData}/>
         <Projects data = {activeData}/>

@@ -43,6 +43,22 @@ h1::before {
 }
 
 
+h3 {
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    left: 108px;
+    top: 640px;
+    opacity: 0;
+    animation: appear 0.5s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Animations */
+
 @keyframes unfold1 {
     0% {
         opacity: 0;
@@ -80,26 +96,6 @@ h1::before {
     }
 }
 
-h3 {
-    position: absolute;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 40px;
-    left: 108px;
-    top: 640px;
-    opacity: 0;
-    animation: appear 0.5s linear;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
 @keyframes appear {
     from {opacity: 0} to {opacity: 1};
 }
-
-/* Add the animation */
-/* h1::after { */
-    /* content: "ана брдар"; */
-    /* -webkit-text-stroke-width: 1px; */
-/* } */
