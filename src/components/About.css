@@ -3,13 +3,15 @@
 }
 
 #about p {
-    font-size: 25px;
     display: inline-block;
     position: absolute;
     top: 250px;
     width: 600px;
-    word-break: break-word;
+    font-size: 1.4rem;
     line-height: 40px;
+    word-break: break-word;
+    padding-left: 5vmin;
+
 }
 
 .tools-list-wrapper {
@@ -23,14 +25,14 @@
 
 .tools-list-wrapper, .tools-wrapper > h4 {
     position: absolute;
-    left: 1166px;
+    right: 5vmin;
 }
 
 .tools-wrapper > h4 {
-    font-size: 45px;
     top: -50px;
-    text-align: right;
     width: 550px;
+    font-size: 45px;
+    text-align: right;
 }
 
 .tools-list-wrapper {
@@ -43,21 +45,21 @@
 .tools-list-wrapper ul {
     border-top: 2px solid var(--light);
     font-style: normal;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 1.4rem;
+    line-height: 1.4;
     text-align: right;
     text-transform: lowercase;
-    width: 150px;
+    width: 15vmin;
     margin: 3%;
 }
 
 .circle-big {
     background: var(--red);
     position: absolute;
-    border-radius: 50%;
-    width: 1481px;
-    height: 1481px;
-    left: 966px;
-    top: -833px;
+    width: 160vmin;
+    height: 160vmin;
+    right: 0;
+    top: -20vmin;
     z-index: -10;
+    clip-path: circle(50% at 100% 0%);
 }

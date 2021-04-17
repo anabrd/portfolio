@@ -1,5 +1,7 @@
 .circle-wrapper {
-    position: relative;
+    position: absolute;
+    left: -35vmin;
+    top: -5vmin;
 }
 
 .circle {

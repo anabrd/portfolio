@@ -1,15 +1,14 @@
 .project-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 5%;
-    width: 1500px;
-    margin: auto;
+    justify-content: space-around;
+    padding: 5vmin;
 }
 
 .project {
-    width: 650px;
+    width: 40vw;
     border-left: 3px solid var(--dark);
-    font-size: 25px;
+    font-size: 1.4rem;
     padding-left: 2%;
     line-height: 50px;
     margin: 2%;

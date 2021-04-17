@@ -6,15 +6,13 @@
 h1 {
     text-transform: lowercase;
     position: absolute;
-    width: 720px;
-    height: 172px;
-    left: 108px;
-    top: 225px;
+    left: 10vmin;
+    top: 20vh;
     font-family: Helvetica;
     font-style: normal;
     font-weight: bold;
     white-space: nowrap;
-    font-size: 150px;
+    font-size: 8rem;
     line-height: 172px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
@@ -50,8 +48,8 @@ h3 {
     font-size: 35px;
     line-height: 40px;
     text-transform: lowercase;
-    left: 108px;
-    top: 640px;
+    left: 10vmin;
+    top: 75vh;
     opacity: 0;
     animation: appear 0.5s linear;
     animation-delay: 2s;

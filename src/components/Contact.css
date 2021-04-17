@@ -2,6 +2,10 @@
     position: relative;
 }
 
+#contact p, form {
+    padding-left: 5vmin;
+}
+
 #contact p {
     font-size: 25px;
     display: inline-block;

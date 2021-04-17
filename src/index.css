@@ -19,7 +19,6 @@
 
 section {
   height: 100vh;
-  padding: 2.5vh 2vw;
   scroll-snap-align: start;
 }
 
@@ -43,14 +42,35 @@ ul {
   text-align: right;
 }
 
+.menu-vertical a {
+  background-image: linear-gradient(var(--blue) 50%, var(--light) 50%);
+  background-size: 0px;
+}
+
+.menu-vertical a:hover {
+  animation: highlight 0.1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes highlight {
+  from {
+      background-position-y: -0%;
+  } to {
+    color: var(--blue);
+    background-position-y: 100%;
+    background-size: auto 175%;
+  }
+}
+
+
 .section-heading {
   width: 642px;
-  height: 115px;
-  font-family: Helvetica;
+  height: 120px;
+  font-family: "Helvetica Neue";
+  padding-left: 4vmin;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
-  line-height: 115px;
   color: var(--red);
   border-bottom: 15px solid var(--dark)
 }
