@@ -17,7 +17,7 @@ function Contact(props) {
 
     let contactLinks = 
     <ul className = "contact-links menu-vertical">
-        {data.contactLinks.map(link => <li><a href={link.path}>{link.name}</a></li>)}
+        {data.contactLinks.map(link => <li><a href={link.path} target="_blank">{link.name}</a></li>)}
     </ul>
 
     return (

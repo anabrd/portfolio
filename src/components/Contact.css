@@ -26,6 +26,28 @@
     color: var(--dark);
 }
 
+.contact-links a {
+    background-image: linear-gradient(var(--light) 50%, var(--blue) 50%);
+    background-size: 0px;
+}
+
+.contact-links a:hover {
+    animation: highlightlinks 0.1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes highlightlinks {
+    from {
+        background-position-y: -0%;
+    }
+
+    to {
+        color: var(--light);
+        background-position-y: 100%;
+        background-size: auto 175%;
+    }
+}
+
 form {
     position: absolute;
     top: 300px;

@@ -7,3 +7,25 @@ nav .menu-vertical a:visited,
 nav .menu-vertical a:active {
     color: var(--light);
 }
+
+nav .menu-vertical a {
+    background-image: linear-gradient(var(--blue) 50%, var(--light) 50%);
+    background-size: 0px;
+}
+
+nav .menu-vertical a:hover {
+    animation: highlightnav 0.1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes highlightnav {
+    from {
+        background-position-y: -0%;
+    }
+
+    to {
+        color: var(--blue);
+        background-position-y: 100%;
+        background-size: auto 175%;
+    }
+}
