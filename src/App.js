@@ -52,7 +52,7 @@ function App() {
         {
           name: "Roughly the Size Of",
           description: "Country to US State comparison.",
-          tools: "Python/Flask, SQLite, Bootstrap",
+          tools: "TBA",
           links: ["TBA", "TBA"]
         },
         {
@@ -124,7 +124,7 @@ function App() {
       id: 1,
       title: "About",
       heading: "Über Mich",
-      description: "lorem ipsum",
+      description: "I am a full-stack web developer with strong focus on front-end technologies. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       subheading: "Werkzeuge",
       content: [["html", "css", "sass", "bootstrap"], 
                 ["javascript","jquery", "react.js", "redux"], 
@@ -146,18 +146,18 @@ function App() {
         },
         {
           name: "Snakes and Ladders",
-          description: "Das klassische Brettspiel, erstellt als pure JavaScript-Webseite.",
+          description: "Das klassische Brettspiel, erstellt in diesem Projekt als pure JavaScript-Webseite.",
           tools: "JavaScript, Vectary",
           links: ["https://github.com/anabrd/snakes-and-ladders", "https://anabrd.github.io/snakes-and-ladders/"]
         },
         {
           name: "Roughly the Size Of",
-          description: "Country to US State comparison.",
-          tools: "Python/Flask, SQLite, Bootstrap",
+          description: "TBA",
+          tools: "TBA",
           links: ["TBA", "TBA"]
         },
         {
-          name: "Know Flow",
+          name: "TBA",
           description: "Plattform für den Austausch von persönlichen Lernfahrplänen.",
           tools: "React.js, TBA",
           links: ["TBA", "TBA"]
@@ -175,19 +175,19 @@ function App() {
             name: "name",
             label: "Your Name",
             type: "text",
-            placeholder: "Bitte einfügen Sie Ihre Name"
+            placeholder: "Bitte geben Sie Ihre Name ein"
           },
           {
             name: "e-mail",
             label: "Your Email",
             type: "email",
-            placeholder: "Bitte einfügen Sie Ihre E-mailadresse"
+            placeholder: "Bitte geben Sie Ihre E-mailadresse ein"
           },
           {
             name: "nachricht",
             label: "Your Message",
             type: "text",
-            placeholder: "Bitte einfügen Sie Ihre Nachricht"
+            placeholder: "Bitte geben Sie Ihre Nachricht ein"
           },
           {
             label: "Submit",
