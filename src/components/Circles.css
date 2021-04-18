@@ -2,6 +2,7 @@
     position: relative;
     right: 5vmin;
     z-index: 20;
+    
 }
 
 .circle {
@@ -28,4 +29,16 @@
     background: var(--light);
     right: 205px;
     top: 229px;
+}
+
+
+@media only screen and (max-width: 1125px) {
+    .circle-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 20%;
+        margin: auto;
+        display: block;
+    }
 }
