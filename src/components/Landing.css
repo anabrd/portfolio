@@ -13,7 +13,6 @@ h1 {
     font-weight: bold;
     white-space: nowrap;
     font-size: 8rem;
-    line-height: 172px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
@@ -40,7 +39,6 @@ h1::before {
     animation-fill-mode: forwards;
 }
 
-
 h3 {
     position: absolute;
     font-style: normal;
@@ -49,7 +47,7 @@ h3 {
     line-height: 40px;
     text-transform: lowercase;
     left: 10vmin;
-    top: 75vh;
+    bottom: 20vh;
     opacity: 0;
     animation: appear 0.5s linear;
     animation-delay: 2s;

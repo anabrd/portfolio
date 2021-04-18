@@ -78,6 +78,16 @@ input[type="email"]:focus {
     outline: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill,
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="email"]:default {
+    background-color: var(--light);
+}
+
+
+
 input[type="submit"] {
     position: absolute;
     margin-top: 50px;

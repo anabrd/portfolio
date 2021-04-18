@@ -1,7 +1,7 @@
 .circle-wrapper {
-    position: absolute;
-    left: -35vmin;
-    top: -5vmin;
+    position: relative;
+    right: 5vmin;
+    z-index: 20;
 }
 
 .circle {
@@ -13,19 +13,19 @@
 
 .circle-inner {
     background: rgba(237, 74, 62, 0.83);
-    left: 1265px;
+    right: 103px;
     top: 155px;
     z-index: 10;
 }
 
 .circle-outer:first-of-type {
     background: var(--light);
-    left: 1368px;
+    right: 0;
     top: 86px;
 }
 
 .circle-outer:last-of-type {
     background: var(--light);
-    left: 1163px;
+    right: 205px;
     top: 229px;
 }
