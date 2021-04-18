@@ -87,11 +87,6 @@ function App() {
             label: "Your Message",
             type: "text",
             placeholder: "Please enter your message"
-          },
-          {
-            label: "Submit",
-            type: "submit",
-            placeholder: ""
           }
         ],
       contactLinks: 
@@ -188,11 +183,6 @@ function App() {
             label: "Your Message",
             type: "text",
             placeholder: "Bitte geben Sie Ihre Nachricht ein"
-          },
-          {
-            label: "Submit",
-            type: "submit",
-            placeholder: ""
           }
         ],
       contactLinks: [

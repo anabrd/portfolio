@@ -13,6 +13,7 @@ function Contact(props) {
             <label for={input.name}>{input.name}</label>
         </div>)
         }
+        <input type="submit" value="Send"></input>
     </form>
 
     let contactLinks = 
