@@ -9,7 +9,7 @@ function Projects(props) {
 
     let projects = data.content.map(project =>
         <div className="project">
-            <h5>{project.name}</h5>
+            <h5><a href={project.links[1]}>{project.name}</a></h5>
             <p>{project.description}</p>
             <p><span>Tools: </span>{project.tools}</p>
             <div className = "projects-links-wrapper">

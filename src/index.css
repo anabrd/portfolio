@@ -48,8 +48,7 @@ ul {
 /* Section headings */
 
 .section-heading {
-  width: 27%;
-  height: 120px;
+  width: 400px;
   font-family: "Helvetica Neue";
   padding-left: 4vmin;
   font-style: normal;
@@ -69,11 +68,6 @@ ul {
 
   section {
     height: 100vh;
-  }
-
-  .section-heading {
-    width: 67%;
-    height: 100px;
   }
 
 }

@@ -23,17 +23,38 @@
     margin-bottom: 2%;
 }
 
-.project span {
-    font-weight: bold;
-}
-
-.project a {
-    padding: 0 20px 0 0;
+.project h5 a {
+    background-image: linear-gradient(var(--light) 50%, var(--blue) 50%);
+    background-size: 0px;
 }
 
 .project a,
 .project a:active,
 .project a:visited {
+    color: var(--dark)
+}
+
+.project h5 a:hover {
+    animation: highlightlinks 0.1s ease;
+    animation-fill-mode: forwards;
+}
+
+.project span {
+    font-weight: bold;
+}
+
+.project p {
+    line-height: 30px;
+    margin: 2% auto;
+}
+
+.projects-links-wrapper a {
+    padding: 0 20px 0 0;
+}
+
+.projects-links-wrapper a,
+.projects-links-wrapper a:active,
+.projects-links-wrapper a:visited {
     color: var(--red)
 }
 

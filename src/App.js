@@ -23,7 +23,7 @@ function App() {
       id: 1,
       title: "About",
       heading: "About",
-      description: "I am a full-stack web developer with strong focus on front-end technologies. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      description: "I am a full-stack web developer with strong focus on front-end technologies. A while back, I decided to part ways with my career as a translator and shift my focus from natural to programming languages.",
       subheading: "Tools & technologies",
       content: [["HTML", "CSS", "Sass", "Bootstrap"], 
                 ["JavaScript","JQuery", "React.js", "Redux"], 

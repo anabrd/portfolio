@@ -13,16 +13,17 @@
     padding-left: 5vmin;
 }
 
-
 .tools-wrapper {
     color: var(--light);
     position: absolute;
-    right: 5vmin;
+    right: 10vmin;
+    width: 50vmin;
     top: 7vmin;
 }
 
 .tools-wrapper > h4 {
     font-size: 45px;
+    width: 50vmin;
     text-align: right;
     margin-bottom: 4%;
 }
@@ -48,8 +49,8 @@
 .circle-big {
     background: var(--red);
     position: absolute;
-    width: 160vmin;
-    height: 160vmin;
+    width: 180vmin;
+    height: 180vmin;
     right: 0;
     top: -10vmin;
     z-index: -10;
@@ -59,7 +60,7 @@
 @media only screen and (max-width: 1125px) {
 
     #about {
-        height: 200vh;
+        height: 200%;
     }
 
     .about-wrapper {
@@ -91,12 +92,12 @@
         height: 100%;
     }
 
-    .tools-list-wrapper h4 {
+    .tools-wrapper h4 {
         width: 80vw;
     }
 
-    .tools-list-wrapper ul{
-        width: 30vw;
+    .tools-list-wrapper ul {
+        width: 22vw;
         font-size: 2rem;
     }
 
