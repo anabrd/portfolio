@@ -1,7 +1,6 @@
 #landing {
     background-color: var(--blue);
     color: var(--light);
-
 }
 
 .main-heading {
@@ -119,7 +118,6 @@ h3 {
 
     .section-heading {
         font-size: 5rem;
-        width: 30vw;
     }
 
     @keyframes unfold1 {
