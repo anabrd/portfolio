@@ -19,7 +19,6 @@
     position: absolute;
     right: 5vmin;
     top: 7vmin;
-    scroll-snap-align: start;
 }
 
 .tools-wrapper > h4 {
@@ -60,7 +59,7 @@
 @media only screen and (max-width: 1125px) {
 
     #about {
-        height: 150vh;
+        height: 200vh;
     }
 
     .about-wrapper {
@@ -75,7 +74,7 @@
     }
 
     #about p, .tools-wrapper {
-        height: 52vh;
+        height: 100vh;
         box-sizing: content-box;
         width: 100%;
         padding: 50px;
@@ -84,6 +83,7 @@
 
     .tools-wrapper {
         background-color: var(--red);
+        scroll-snap-align: start;
     }
 
     .tools-list-wrapper {
@@ -96,7 +96,8 @@
     }
 
     .tools-list-wrapper ul{
-        width: 20vw;
+        width: 30vw;
+        font-size: 2rem;
     }
 
 }
