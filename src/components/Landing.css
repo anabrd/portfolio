@@ -98,3 +98,55 @@ h3 {
 @keyframes appear {
     from {opacity: 0} to {opacity: 1};
 }
+
+@media only screen and (max-width: 1245px) {
+
+    .main-heading {
+        top: 30vh;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        top: 280px;
+    }
+
+    @keyframes unfold1 {
+        0% {
+            opacity: 0;
+            top: 20px;
+        }
+
+        50% {
+            opacity: 0.5;
+            top: 50px;
+        }
+
+        100% {
+            opacity: 1;
+            top: 80px;
+        }
+    }
+
+    @keyframes unfold2 {
+        0% {
+            content: "ana brdar";
+            opacity: 0;
+            top: 100px;
+        }
+
+        50% {
+            content: "ana brdar";
+            opacity: 0.5;
+            top: 130px;
+        }
+
+        100% {
+            content: "ana brdar";
+            opacity: 1;
+            top: 160px;
+        }
+    }
+}
