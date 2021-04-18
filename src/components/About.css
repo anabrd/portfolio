@@ -19,6 +19,7 @@
     position: absolute;
     right: 5vmin;
     top: 7vmin;
+    scroll-snap-align: start;
 }
 
 .tools-wrapper > h4 {
