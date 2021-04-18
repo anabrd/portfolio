@@ -32,6 +32,8 @@ ul {
   list-style-type: none;
 }
 
+/* Menu top and bottom */
+
 .menu-vertical {
   position: absolute;
   bottom: 100px;
@@ -43,8 +45,11 @@ ul {
   text-align: right;
 }
 
+/* Section headings */
+
 .section-heading {
-  width: 642px;
+  min-width: 550px;
+  max-width: 400px;
   height: 120px;
   font-family: "Helvetica Neue";
   padding-left: 4vmin;
@@ -53,4 +58,22 @@ ul {
   font-size: 100px;
   color: var(--red);
   border-bottom: 15px solid var(--dark)
+}
+
+@media only screen and (max-width: 1125px) {
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  section {
+    height: 100vh;
+  }
+
+  .section-heading {
+    height: 100px
+  }
+
 }

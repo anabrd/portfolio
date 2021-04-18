@@ -6,7 +6,7 @@
 #about p {
     position: absolute;
     top: 25vmin;
-    width: 50%;
+    width: 45%;
     font-size: 1.4rem;
     line-height: 1.4;
     word-break: break-word;
@@ -54,4 +54,48 @@
     top: -10vmin;
     z-index: -10;
     clip-path: circle(50% at 100% 0%);
+}
+
+@media only screen and (max-width: 1125px) {
+
+    #about {
+        height: 150vh;
+    }
+
+    .about-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .circle-big {
+        display: none;
+    }
+
+    #about p, .tools-wrapper {
+        height: 52vh;
+        box-sizing: content-box;
+        width: 100%;
+        padding: 50px;
+        position: initial;
+    }
+
+    .tools-wrapper {
+        background-color: var(--red);
+    }
+
+    .tools-list-wrapper {
+        width: 80vw;
+        height: 100%;
+    }
+
+    .tools-list-wrapper h4 {
+        width: 80vw;
+    }
+
+    .tools-list-wrapper ul{
+        width: 20vw;
+    }
+
 }

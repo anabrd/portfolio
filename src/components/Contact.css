@@ -2,7 +2,8 @@
     position: relative;
 }
 
-#contact p, form {
+#contact p,
+form {
     padding-left: 5vmin;
 }
 
@@ -104,4 +105,36 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     box-shadow: 0 0 0 50px var(--light) inset !important;
     -webkit-box-shadow: 0 0 0 50px var(--light) inset !important;
+}
+
+@media only screen and (max-width: 1125px) {
+
+    #contact .circle-wrapper {
+        display: none;
+    }
+
+    #contact .contact-links {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        border: none;
+        bottom: 5vh;
+        left: 0;
+    }
+
+    #contact p {
+        position: initial;
+        margin-top: 5%;
+    }
+
+    form {
+        position: initial;
+        height: 450px;
+        margin-top: 15%;
+    }
+
+    input[type="submit"] {
+        left: 5vmin;
+    }
+
 }

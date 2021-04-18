@@ -40,3 +40,15 @@
 .project a:hover {
     color: var(--blue)
 }
+
+@media only screen and (max-width: 1125px) {
+
+    #projects {
+        height: 140vh;
+    }
+
+    .project {
+        width: 100%;
+        margin: 5% auto;
+    }
+}
