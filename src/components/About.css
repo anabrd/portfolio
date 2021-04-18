@@ -1,45 +1,37 @@
 #about {
     position: relative;
+    padding-top: 5vmin;
 }
 
 #about p {
-    display: inline-block;
     position: absolute;
-    top: 250px;
-    width: 600px;
+    top: 25vmin;
+    width: 50%;
     font-size: 1.4rem;
-    line-height: 40px;
+    line-height: 1.4;
     word-break: break-word;
     padding-left: 5vmin;
+}
 
+
+.tools-wrapper {
+    color: var(--light);
+    position: absolute;
+    right: 5vmin;
+    top: 7vmin;
+}
+
+.tools-wrapper > h4 {
+    font-size: 45px;
+    text-align: right;
+    margin-bottom: 4%;
 }
 
 .tools-list-wrapper {
     display: flex;
-}
-
-.tools-wrapper {
-    position: relative;
-    color: var(--light)
-}
-
-.tools-list-wrapper, .tools-wrapper > h4 {
-    position: absolute;
-    right: 5vmin;
-}
-
-.tools-wrapper > h4 {
-    top: -50px;
-    width: 550px;
-    font-size: 45px;
-    text-align: right;
-}
-
-.tools-list-wrapper {
-    top: 33px;
-    width: 550px;
     justify-content: flex-end;
     flex-wrap: wrap;
+    width: 50vmin;
 }
 
 .tools-list-wrapper ul {
@@ -49,8 +41,8 @@
     line-height: 1.4;
     text-align: right;
     text-transform: lowercase;
-    width: 15vmin;
-    margin: 3%;
+    width: 14vmin;
+    margin: 5% 0 5% 5%;
 }
 
 .circle-big {
@@ -59,7 +51,7 @@
     width: 160vmin;
     height: 160vmin;
     right: 0;
-    top: -20vmin;
+    top: -10vmin;
     z-index: -10;
     clip-path: circle(50% at 100% 0%);
 }

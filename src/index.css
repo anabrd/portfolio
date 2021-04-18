@@ -20,6 +20,7 @@
 section {
   height: 100vh;
   scroll-snap-align: start;
+  padding-top: 3vmin;
 }
 
 a {
@@ -41,27 +42,6 @@ ul {
   font-weight: bold;
   text-align: right;
 }
-
-.menu-vertical a {
-  background-image: linear-gradient(var(--blue) 50%, var(--light) 50%);
-  background-size: 0px;
-}
-
-.menu-vertical a:hover {
-  animation: highlight 0.1s ease;
-  animation-fill-mode: forwards;
-}
-
-@keyframes highlight {
-  from {
-      background-position-y: -0%;
-  } to {
-    color: var(--blue);
-    background-position-y: 100%;
-    background-size: auto 175%;
-  }
-}
-
 
 .section-heading {
   width: 642px;

@@ -3,11 +3,14 @@
     color: var(--light);
 }
 
-h1 {
-    text-transform: lowercase;
+.main-heading {
     position: absolute;
     left: 10vmin;
     top: 20vh;
+}
+
+h1 {
+    text-transform: lowercase;
     font-family: Helvetica;
     font-style: normal;
     font-weight: bold;
@@ -46,8 +49,7 @@ h3 {
     font-size: 35px;
     line-height: 40px;
     text-transform: lowercase;
-    left: 10vmin;
-    bottom: 20vh;
+    top: calc(20vh + 250px);
     opacity: 0;
     animation: appear 0.5s linear;
     animation-delay: 2s;

@@ -12,12 +12,12 @@ function About(props) {
             <h2 className="section-heading">{data.heading}</h2>
                     <p>{data.description}</p>
                 <div className="tools-wrapper">
-                    <div className="circle-big"></div>
                     <h4>{data.subheading}</h4>
                     <div className = "tools-list-wrapper">
                         {tools}
                     </div>
                 </div>
+                <div className="circle-big"></div>
         </section>
     )
 }

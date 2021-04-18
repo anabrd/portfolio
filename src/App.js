@@ -118,7 +118,7 @@ function App() {
       title: "Landing",
       heading: "",
       subheading: "Ana Brdar",
-      description: "Full Stack Webentwicklerin"
+      description: "Full-Stack Webentwicklerin"
     },
     {
       id: 1,
@@ -140,13 +140,13 @@ function App() {
       content: [
         {
           name: "Time Tracker App",
-          description: "App for tracking time and generating reports built with MERN stack.",
+          description: "App zur Zeiterfassung und Erstellung von Berichten, die mit dem MERN-Stack erstellt wurde.",
           tools: "React.js, Chart.js, api-to-go",
           links: ["https://github.com/anabrd/time-tracker-app", "https://a-time-tracker-app.herokuapp.com/"]
         },
         {
           name: "Snakes and Ladders",
-          description: "Classic board game reimagined as a pure JavaScript web page.",
+          description: "Das klassische Brettspiel, erstellt als pure JavaScript-Webseite.",
           tools: "JavaScript, Vectary",
           links: ["https://github.com/anabrd/snakes-and-ladders", "https://anabrd.github.io/snakes-and-ladders/"]
         },
@@ -158,7 +158,7 @@ function App() {
         },
         {
           name: "Know Flow",
-          description: "Platform for sharing personal learning roadmaps.",
+          description: "Plattform für den Austausch von persönlichen Lernfahrplänen.",
           tools: "React.js, TBA",
           links: ["TBA", "TBA"]
         }
@@ -168,21 +168,33 @@ function App() {
       id: 3,
       title: "Contact",
       heading: "Kontakt",
-      description: "Get in touch.",
-      contactForm: [
-        {
-          label: "Your Name",
-          placeholder: "Please enter your name"
-        },
-        {
-          label: "Your Email",
-          placeholder: "Please enter your email"
-        },
-        {
-          label: "Your Message",
-          placeholder: "Please enter your message"
-        }
-      ],
+      description: "Melden Sie sich.",
+      contactForm: 
+        [
+          {
+            name: "name",
+            label: "Your Name",
+            type: "text",
+            placeholder: "Bitte einfügen Sie Ihre Name"
+          },
+          {
+            name: "e-mail",
+            label: "Your Email",
+            type: "email",
+            placeholder: "Bitte einfügen Sie Ihre E-mailadresse"
+          },
+          {
+            name: "nachricht",
+            label: "Your Message",
+            type: "text",
+            placeholder: "Bitte einfügen Sie Ihre Nachricht"
+          },
+          {
+            label: "Submit",
+            type: "submit",
+            placeholder: ""
+          }
+        ],
       contactLinks: [
         {
           name: "Lebenslauf",

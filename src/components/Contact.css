@@ -76,17 +76,9 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="email"]:focus {
     outline: none;
+    border-bottom: 2px solid var(--red);
+    transition: 0.2s;
 }
-
-input:-webkit-autofill,
-input:-webkit-autofill,
-input[type="text"]:valid,
-input[type="email"]:valid,
-input[type="email"]:default {
-    background-color: var(--light);
-}
-
-
 
 input[type="submit"] {
     position: absolute;
@@ -106,3 +98,9 @@ input[type="submit"]:hover {
     transition: 0.2s;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 50px var(--light) inset !important;
+}

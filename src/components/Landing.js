@@ -8,8 +8,10 @@ function Landing(props) {
     return (
         <section id={data.title.toLowerCase()}>
             <Circles theme = "light"/>
-            <h1>{data.subheading}</h1>
-            <h3>{data.description}</h3> 
+            <div className="main-heading">
+                <h1>{data.subheading}</h1>
+                <h3>{data.description}</h3> 
+            </div>
         </section>
     )
 }
