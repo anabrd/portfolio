@@ -1,4 +1,8 @@
 #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 
@@ -9,18 +13,15 @@ form {
 
 #contact p {
     font-size: 25px;
-    display: inline-block;
-    position: absolute;
-    top: 180px;
-    width: 600px;
-    word-break: break-word;
-    line-height: 40px;
 }
 
 .contact-links {
     color: var(--dark);
     border-right: 2px solid var(--dark);
+    position: absolute;
+    bottom: 5vmin;
 }
+
 .contact-links a,
 .contact-links a:visited,
 .contact-links a:active {
@@ -50,8 +51,6 @@ form {
 }
 
 form {
-    position: absolute;
-    top: 30vmin;
     height: 450px;
 }
 
@@ -105,36 +104,4 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     box-shadow: 0 0 0 50px var(--light) inset !important;
     -webkit-box-shadow: 0 0 0 50px var(--light) inset !important;
-}
-
-@media only screen and (max-width: 1125px) {
-
-    #contact .circle-wrapper {
-        display: none;
-    }
-
-    #contact .contact-links {
-        width: 100vw;
-        display: flex;
-        justify-content: space-around;
-        border: none;
-        bottom: 5vh;
-        left: 0;
-    }
-
-    #contact p {
-        position: initial;
-        margin-top: 5%;
-    }
-
-    form {
-        position: initial;
-        height: 450px;
-        margin-top: 15%;
-    }
-
-    input[type="submit"] {
-        left: 5vmin;
-    }
-
 }

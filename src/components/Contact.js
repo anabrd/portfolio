@@ -22,13 +22,17 @@ function Contact(props) {
     </ul>
 
     return (
+        <>
         <section id = {data.title.toLowerCase()}>
+            <div>
+                <h2 className="section-heading">{data.heading}</h2>
+                <p>{data.description}</p>
+                {contactForm}
+            </div>
             <Circles theme = "dark"/>
-            <h2 className="section-heading">{data.heading}</h2>
-            <p>{data.description}</p>
-            {contactForm}
             {contactLinks}
         </section>
+        </>
     )
 }
 
