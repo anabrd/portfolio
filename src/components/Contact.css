@@ -18,8 +18,6 @@ form {
 .contact-links {
     color: var(--dark);
     border-right: 2px solid var(--dark);
-    position: absolute;
-    bottom: 5vmin;
 }
 
 .contact-links a,

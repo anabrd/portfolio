@@ -31,26 +31,3 @@
 .circle-outer:last-of-type {
     transform: translateX(100%);
 }
-
-
-/* @media only screen and (max-width: 1125px) { */
-    /* .circle-wrapper { */
-        /* position: absolute; */
-        /* top: 0; */
-        /* left: 0; */
-        /* right: 20%; */
-        /* margin: auto; */
-        /* display: block; */
-    /* } */
-/* } */
-/*  */
-/* @media only screen and (max-width: 680px) { */
-        /* .circle-wrapper { */
-            /* position: absolute; */
-            /* top: 0; */
-            /* left: 0; */
-            /* right: 10%; */
-            /* margin: auto; */
-            /* display: block; */
-        /* } */
-    /* } */
