@@ -107,6 +107,10 @@ h3 {
         top: 18rem;
     }
 
+    #landing {
+        height: 100vh;
+    }
+
     #landing, .section-content {
         flex-direction: column-reverse;
         flex-wrap: wrap;
