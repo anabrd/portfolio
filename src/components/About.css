@@ -78,7 +78,7 @@
         flex: 0 1 50vh;
     }
     .about-wrapper p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .circle-big {
@@ -99,13 +99,12 @@
     }
 
     .tools-list-wrapper {
-        justify-content: center;
         width: 100%;
         overflow: hidden;
         margin: 0;
     }
 
     .tools-list-wrapper ul {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
