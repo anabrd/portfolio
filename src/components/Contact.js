@@ -23,12 +23,14 @@ function Contact(props) {
 
     return (
             <section id = {data.title.toLowerCase()}>
-                <div>
-                    <h2 className="section-heading">{data.heading}</h2>
-                    <p>{data.description}</p>
-                    {contactForm}
+                <h2 className="section-heading">{data.heading}</h2>
+                <div className="section-content">
+                    <div className="form-wrapper">
+                        <p>{data.description}</p>
+                        {contactForm}
+                    </div>
+                    <Circles theme = "dark"/>
                 </div>
-                <Circles theme = "dark"/>
                 {contactLinks}
             </section>
             )

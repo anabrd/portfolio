@@ -48,12 +48,12 @@ ul {
 /* Section headings */
 
 .section-heading {
-  width: 400px;
+  display: inline;
   font-family: "Helvetica Neue";
-  padding-left: 4vmin;
+  padding: 0 4vmin;
   font-style: normal;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 4rem;
   color: var(--red);
-  border-bottom: 15px solid var(--dark)
+  border-bottom: 12px solid var(--dark)
 }

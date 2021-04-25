@@ -1,18 +1,14 @@
 #contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
-}
-
-#contact p,
-form {
-    padding-left: 5vmin;
 }
 
 #contact p {
     font-size: 25px;
+}
+
+.form-wrapper {
+    padding: 5vmin;
+    align-self: center;
 }
 
 .contact-links {
@@ -79,7 +75,6 @@ input[type="email"]:focus {
 }
 
 input[type="submit"] {
-    position: absolute;
     margin-top: 50px;
     left: calc(5vmin + 310px);
     padding: 10px 35px;

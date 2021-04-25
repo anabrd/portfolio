@@ -7,19 +7,22 @@ function About(props) {
                                     <ul>
                                         {list.map(item => <li>{item}</li>)}
                                     </ul>);
+
+    let description = data.description.map(line => <p>{line}</p>)
     return (
         <section id={data.title.toLowerCase()}>
             <h2 className="section-heading">{data.heading}</h2>
-            <div className="about-wrapper">
-
-            <p>{data.description}</p>
-            <div className="tools-wrapper">
-                <h4>{data.subheading}</h4>
-                <div className = "tools-list-wrapper">
-                    {tools}
+            <div className="section-content">
+                <div className="about-wrapper">
+                    {description}
                 </div>
-            </div>
-            <div className="circle-big"></div>
+                <div className="tools-wrapper">
+                        <h4>{data.subheading}</h4>
+                        <div className = "tools-list-wrapper">
+                            {tools}
+                        </div>
+                        <div className="circle-big"></div>
+                </div>
             </div>
         </section>
     )
