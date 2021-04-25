@@ -8,12 +8,13 @@
 }
 
 .main-heading {
-    align-self: center;
+    position: relative;
+    align-self: flex-start;
+    margin: 10% 0 0 5%;
 }
 
 h1 {
-    display: flex;
-    flex-direction: row;
+    position: relative;
     text-transform: lowercase;
     font-family: Helvetica;
     font-style: normal;
@@ -26,22 +27,28 @@ h1 {
 }
 
 h1::after {
-    content: "ана брдар";
+    content: "\Aана брдар";
     letter-spacing: 0;
     -webkit-text-stroke-width: 1px;
+    position: absolute;
+    left: 0;
     animation: unfold1 1s linear;
     animation-fill-mode: forwards;
 }
 
 h1::before {
-    content: "ana brdar";
+    content: "\A ana brdar";
     -webkit-text-stroke-width: 0.5px;
+    position: absolute;
+    left: 0;
     animation: unfold2 1s linear;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 h3 {
+    position: absolute;
+    top: 24rem;
     font-style: normal;
     font-weight: normal;
     font-size: 35px;
@@ -54,21 +61,15 @@ h3 {
 }
 
 /* Animations */
-
 @keyframes unfold1 {
     0% {
         opacity: 0;
-        top: 380px;
-    }
-
-    50% {
-        opacity: 0.5;
-        top: 480px;
+        top: 0;
     }
 
     100% {
         opacity: 1;
-        top: 580px;
+        top: 8rem;
     }
 }
 
@@ -76,19 +77,13 @@ h3 {
     0% {
         content: "ana brdar";
         opacity: 0;
-        top: 180px;
-    }
-
-    50% {
-        content: "ana brdar";
-        opacity: 0.5;
-        top: 220px;
+        top: 8rem;
     }
 
     100% {
         content: "ana brdar";
         opacity: 1;
-        top: 250px;
+        top: 16rem;
     }
 }
 
@@ -96,11 +91,12 @@ h3 {
     from {opacity: 0} to {opacity: 1};
 }
 
-/* Smaller screen sizing */
-@media only screen and (max-width: 1245px) {
+/*** MEDIA QUERIES ***/
 
-    .main-heading {
-        top: 30vh;
+/* Tablet sizing */
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
     }
 
     h1 {
@@ -108,24 +104,32 @@ h3 {
     }
 
     h3 {
-        top: 280px;
+        top: 18rem;
     }
 
+    #landing {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #landing .circle-wrapper {
+        width: 100vw;
+    }
+
+    .main-heading {
+        width: 100vw;
+    }
 
     @keyframes unfold1 {
         0% {
             opacity: 0;
-            top: 20px;
-        }
-
-        50% {
-            opacity: 0.5;
-            top: 50px;
+            top: 0;
         }
 
         100% {
             opacity: 1;
-            top: 80px;
+            top: 6rem;
         }
     }
 
@@ -133,29 +137,15 @@ h3 {
         0% {
             content: "ana brdar";
             opacity: 0;
-            top: 100px;
-        }
-
-        50% {
-            content: "ana brdar";
-            opacity: 0.5;
-            top: 130px;
+            top: 6rem;
         }
 
         100% {
             content: "ana brdar";
             opacity: 1;
-            top: 160px;
+            top: 12rem;
         }
     }
-}
 
-/* Tablet sizing */
-@media only screen and (max-width: 876px) {
-
-
-    nav {
-        display: none;
-    }
 
 }
