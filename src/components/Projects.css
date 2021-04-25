@@ -31,7 +31,7 @@
 .project a,
 .project a:active,
 .project a:visited {
-    color: var(--dark)
+    color: var(--dark);
 }
 
 .project h5 a:hover {
@@ -62,11 +62,7 @@
     color: var(--blue)
 }
 
-@media only screen and (max-width: 1125px) {
-
-    #projects {
-        height: 140vh;
-    }
+@media only screen and (max-width: 768px) {
 
     .project {
         width: 100%;

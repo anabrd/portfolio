@@ -23,6 +23,10 @@ section {
   padding-top: 3vmin;
 }
 
+p {
+  font-size: 1.4rem;
+}
+
 a {
   text-decoration: none;
   text-transform: lowercase;
@@ -56,4 +60,10 @@ ul {
   font-size: 4rem;
   color: var(--red);
   border-bottom: 12px solid var(--dark)
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+      height: initial;
+    }
 }
