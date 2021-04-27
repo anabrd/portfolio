@@ -16,11 +16,6 @@ function Contact(props) {
         <input type="submit" value="Send"></input>
     </form>
 
-    let contactLinks = 
-    <ul className = "contact-links menu-vertical">
-        {data.contactLinks.map(link => <li><a href={link.path} target="_blank">{link.name}</a></li>)}
-    </ul>
-
     return (
             <section id = {data.title.toLowerCase()}>
                 <h2 className="section-heading">{data.heading}</h2>
@@ -31,7 +26,11 @@ function Contact(props) {
                     </div>
                     <Circles theme = "dark"/>
                 </div>
-                {contactLinks}
+                <ul className = "contact-links menu-vertical">
+                    {data.contactLinks.map(link => <li>
+                        <a href={link.path} target="_blank">{link.name}</a>
+                    </li>)}
+                </ul>
             </section>
             )
 }

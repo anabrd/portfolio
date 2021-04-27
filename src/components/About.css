@@ -24,7 +24,7 @@
 
 .tools-wrapper {
     color: var(--light);
-    margin: -5% 5vmin;
+    margin: -3% 5vmin;
 }
 
 .tools-wrapper > h4 {
@@ -74,7 +74,6 @@
 
     .about-wrapper {
         width: 100%;
-        flex: 0 auto;
         flex: 0 1 50vh;
     }
     .about-wrapper p {
@@ -90,7 +89,6 @@
         background-color: var(--red);
         margin: 0;
         width: 100%;
-        flex: 0 1 auto;
         padding: 3%;
     }
 
@@ -100,11 +98,10 @@
 
     .tools-list-wrapper {
         width: 100%;
-        overflow: hidden;
-        margin: 0;
+        height: 35vh;
     }
 
     .tools-list-wrapper ul {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }

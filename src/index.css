@@ -5,7 +5,6 @@
   --red: #ED4A3E;
   font-family: 'Helvetica Neue';
   color: var(--dark);
-  scroll-snap-type: y mandatory;
   overflow-x: hidden;
 }
 
