@@ -7,8 +7,8 @@ function Projects(props) {
 
     let data = props.data.filter(item => item.id == 2)[0];
 
-    let projects = data.content.map(project =>
-        <div className="project">
+    let projects = data.content.map((project, index) =>
+        <div className="project" key={index}>
             <h5><a href={project.links[1]}>{project.name}</a></h5>
             <p>{project.description}</p>
             <p><span>Tools: </span>{project.tools}</p>

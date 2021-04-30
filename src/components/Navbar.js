@@ -6,8 +6,8 @@ export default function Navbar(props) {
     return (
         <nav>
             <ul className = "menu-vertical">
-                {props.data.map(section => 
-                    <li>
+                {props.data.map((section, index) => 
+                    <li key={index}>
                         <NavHashLink smooth to={{hash: section.title.toLowerCase()}}>
                             {section.heading}
                         </NavHashLink>

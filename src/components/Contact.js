@@ -4,17 +4,21 @@ import './Contact.css'
 function Contact(props) {
 
     let data = props.data.filter(item => item.id == 3)[0];
-
+    
     let contactForm = 
-    <form> 
-        {data.contactForm.map(input =>
-        <div>
-            <input id={input.name} type={input.type} placeholder={input.placeholder}></input>
-            <label for={input.name}>{input.name}</label>
-        </div>)
-        }
-        <input type="submit" value="Send"></input>
-    </form>
+        <form> 
+            {data.contactForm.map((input, index) =>
+            <div key={index}>
+                <input id={input.name} type={input.type} placeholder={input.placeholder}></input>
+                <label htmlFor={input.name}>{input.name}</label>
+            </div>)
+            }
+            <input type="submit" value="Send"></input>
+        </form>
+
+    let contactLinks = data.contactLinks.map((link, index)=> <li key={index}>
+                        <a href={link.path} target="_blank">{link.name}</a>
+                    </li>)
 
     return (
             <section id = {data.title.toLowerCase()}>
@@ -27,9 +31,7 @@ function Contact(props) {
                     <Circles theme = "dark"/>
                 </div>
                 <ul className = "contact-links menu-vertical">
-                    {data.contactLinks.map(link => <li>
-                        <a href={link.path} target="_blank">{link.name}</a>
-                    </li>)}
+                    {contactLinks}
                 </ul>
             </section>
             )

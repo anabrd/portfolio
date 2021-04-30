@@ -3,12 +3,15 @@ import './About.css'
 function About(props) {
 
     let data = props.data.filter(item => item.id == 1)[0];
-    let tools = data.content.map(list => 
-                                    <ul>
-                                        {list.map(item => <li>{item}</li>)}
-                                    </ul>);
 
-    let description = data.description.map(line => <p>{line}</p>)
+    let tools = data.content.map((list, index) => 
+        <ul key={index}>
+            {list.map((item, index) => <li key={index}>{item}</li>)}
+        </ul>);
+
+    let description = data.description.map((line, index) => 
+        <p key={index}>{line}</p>)
+
     return (
         <section id={data.title.toLowerCase()}>
             <h2 className="section-heading">{data.heading}</h2>
