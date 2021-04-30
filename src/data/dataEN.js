@@ -10,7 +10,7 @@ const dataEN = [{
         title: "About",
         heading: "About",
         description: ["I am a full-stack web developer with strong focus on front-end technologies.", "A while back, I decided to part ways with my career as a translator and shift my focus from natural to programming languages. I enrolled in an intensive one-year course focused on MERN stack. ",
-            "Since then, I've been building project using mainly with JavaScript and React.", "Aside from my experience in developing clean, responsive SPAs, I have a growing interest in backend technologies."
+            "Since then, I've been building project using mainly JavaScript and React.", "Aside from my experience in developing SPAs, I have a growing interest in backend technologies."
         ],
         subheading: "Tools & technologies",
         content: [
