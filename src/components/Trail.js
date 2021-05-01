@@ -9,7 +9,7 @@ const Trail = (props) => {
         opacity: props.show ? 1 : 0,
         x: props.show ? 0 : 0,
         height: props.show ? 30 : 0,
-        from: { opacity: 0, x: 20, height: 0 },
+        from: { opacity: 0, x: 0, height: 0 },
     });
 
     return (
