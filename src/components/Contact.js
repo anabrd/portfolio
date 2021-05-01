@@ -1,7 +1,11 @@
 import Circles from './Circles';
+import { useState, useEffect } from 'react';
 import './Contact.css'
+import Trail from './Trail'
 
 function Contact(props) {
+
+    const [show, setShow] = useState(false);
 
     let data = props.data.filter(item => item.id == 3)[0];
     
@@ -20,6 +24,11 @@ function Contact(props) {
                         <a href={link.path} target="_blank">{link.name}</a>
                     </li>)
 
+    useEffect(() => {
+        setTimeout(setShow(true), 10000)
+    }, [])
+                    
+
     return (
             <section id = {data.title.toLowerCase()}>
                 <h2 className="section-heading">{data.heading}</h2>
@@ -31,10 +40,13 @@ function Contact(props) {
                     <Circles theme = "dark"/>
                 </div>
                 <ul className = "contact-links menu-vertical">
-                    {contactLinks}
+                    <Trail show={show}>
+                        {contactLinks}
+                    </Trail>
                 </ul>
             </section>
-            )
+            
+    )
 }
 
 export default Contact;

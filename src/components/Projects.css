@@ -7,8 +7,7 @@
 
 .project {
     width: 40vw;
-    border-left: 3px solid var(--dark);
-    font-size: 1.4rem;
+    border-left: 4px solid var(--dark);
     padding-left: 2%;
     line-height: 50px;
     margin: 2%;
@@ -16,8 +15,8 @@
 
 .project h5 {
     font-style: normal;
+    font-size: 1.7em;
     font-weight: bold;
-    font-size: 2rem;
     line-height: 46px;
     text-transform: lowercase;
     margin-bottom: 2%;
@@ -45,17 +44,25 @@
 
 .project p {
     line-height: 30px;
+    font-size: 1.2em;
     margin: 2% auto;
 }
 
-.projects-links-wrapper a {
-    padding: 0 20px 0 0;
+.projects-links-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projects-links-wrapper span {
+    margin: auto 20px;
 }
 
 .projects-links-wrapper a,
 .projects-links-wrapper a:active,
 .projects-links-wrapper a:visited {
-    color: var(--red)
+    font-size: 1.2em;
+    color: var(--red);
+    font-weight: bold;
 }
 
 .project a:hover {

@@ -13,8 +13,9 @@ function Projects(props) {
             <p>{project.description}</p>
             <p><span>Tools: </span>{project.tools}</p>
             <div className = "projects-links-wrapper">
-                <a href={project.links[0]} target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                <a href={project.links[1]} target="_blank"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                <a href={project.links[0]} target="_blank">GitHub</a>
+                <span> | </span>
+                <a href={project.links[1]} target="_blank">Deployment</a>
             </div>
         </div>)
 

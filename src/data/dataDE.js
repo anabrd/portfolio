@@ -1,7 +1,7 @@
 let dataDE = [{
         id: 0,
         title: "Landing",
-        heading: "",
+        heading: "Home",
         subheading: "Ana Brdar",
         description: "Full-Stack Webentwicklerin"
     },

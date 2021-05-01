@@ -1,7 +1,7 @@
 const dataEN = [{
         id: 0,
         title: "Landing",
-        heading: "",
+        heading: "Home",
         subheading: "Ana Brdar",
         description: "Berlin-based Web Developer"
     },
