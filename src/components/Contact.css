@@ -121,6 +121,7 @@ input:-webkit-autofill:active {
     .contact-links>div {
         display: flex;
         height: 7vh;
+        width: 100vw;
         justify-content: space-around;
         align-items: center;
         background-color: var(--blue);
@@ -150,7 +151,8 @@ input:-webkit-autofill:active {
     }
 
     .form-wrapper {
-        padding: 2vmin;
+        align-self: center;
+        padding: 10vmin 2vmin;
         width: 90vmin;
     }
 

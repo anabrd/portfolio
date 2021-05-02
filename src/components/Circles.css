@@ -26,8 +26,30 @@
 
 .circle-outer:first-of-type {
     background: var(--light);
+    animation: unfold-circle2 1s linear;
+    animation-fill-mode: forwards;
 }
 
 .circle-outer:last-of-type {
-    transform: translateX(100%);
+        animation: unfold-circle1 1s linear;
+        animation-fill-mode: forwards;
 }
+
+@keyframes unfold-circle1 {
+    from {
+    transform: translateX(50%);
+    } to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes unfold-circle2 {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
