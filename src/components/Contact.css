@@ -148,4 +148,9 @@ input:-webkit-autofill:active {
         animation: highlightnav 0.1s ease;
         animation-fill-mode: forwards;
     }
+
+    .form-wrapper {
+        padding: 2vmin;
+        width: 90vmin;
+    }
 }
