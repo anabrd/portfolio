@@ -20,7 +20,7 @@
 section {
   height: 100vh;
   scroll-snap-align: start;
-  padding-top: 3vmin;
+  padding-top: 5vmin;
 }
 
 p {
@@ -70,5 +70,10 @@ ul {
 
     section {
       height: initial;
+    }
+
+    .section-heading {
+      font-size: 3rem;
+      border-bottom: 8px solid var(--dark)
     }
 }

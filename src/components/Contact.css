@@ -160,7 +160,6 @@ input:-webkit-autofill:active {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 10vmin 2vmin;
         width: 90vmin;
         height: 80vh;
     }
