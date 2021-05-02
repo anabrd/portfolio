@@ -22,15 +22,16 @@ function Contact(props) {
 
     let contactLinks = data.contactLinks.map((link, index)=> <li key={index}>
                         <a href={link.path} target="_blank">{link.name}</a>
-                    </li>)
-
-    useEffect(() => {
-        setTimeout(setShow(true), 10000)
-    }, [])
+                    </li>);
                     
+    window.onscroll = function(e) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            setShow(true);
+        }
+    };
 
     return (
-            <section id = {data.title.toLowerCase()}>
+            <section id = {data.title.toLowerCase()} onScroll={() => setShow(true)}>
                 <h2 className="section-heading">{data.heading}</h2>
                 <div className="section-content">
                     <div className="form-wrapper">

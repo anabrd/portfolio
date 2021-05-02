@@ -7,6 +7,14 @@ export default function Navbar(props) {
 
     const [show, setShow] = useState(false);
 
+    useEffect(() => {
+        let timer = setTimeout(() => setShow(true), 2000);
+        window.addEventListener('scroll',console.log("ok"));
+        return () => {
+        clearTimeout(timer);
+        };
+    }, [])
+
     let menuLinks = props.data.map((section, index) => 
                     <li key={index}>
                         <NavHashLink smooth to={{hash: section.title.toLowerCase()}}>
@@ -18,10 +26,6 @@ export default function Navbar(props) {
                     onClick={props.activeLang == "DE" ? () => props.setActiveLang("EN") : () => props.setActiveLang("DE")}>
                         {props.activeLang == "DE" ? "EN" : "DE"}
                     </NavHashLink> )
-
-    useEffect(() => {
-        setTimeout(setShow(true), 2000)
-    }, [])
 
     return (
         <nav>
