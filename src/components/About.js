@@ -24,7 +24,6 @@ function About(props) {
                         <div className = "tools-list-wrapper">
                             {tools}
                         </div>
-                        <div className="circle-big"></div>
                 </div>
             </div>
         </section>

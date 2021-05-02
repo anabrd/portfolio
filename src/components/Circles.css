@@ -31,14 +31,16 @@
 }
 
 .circle-outer:last-of-type {
-        animation: unfold-circle1 1s linear;
-        animation-fill-mode: forwards;
+    animation: unfold-circle1 1s linear;
+    animation-fill-mode: forwards;
 }
 
 @keyframes unfold-circle1 {
     from {
-    transform: translateX(50%);
-    } to {
+        transform: translateX(50%);
+    }
+
+    to {
         transform: translateX(100%);
     }
 }
@@ -52,4 +54,3 @@
         transform: translateX(0%);
     }
 }
-

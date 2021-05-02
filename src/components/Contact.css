@@ -101,6 +101,10 @@ input:-webkit-autofill:active {
 
 /* Tablet sizing */
 @media only screen and (max-width: 768px) {
+
+    #contact {
+        height: 100vh;
+    }
     
     #contact .section-content {
         margin-top: 2%;
@@ -111,7 +115,9 @@ input:-webkit-autofill:active {
     }
 
     .contact-links {
-        position: initial;
+        position: absolute;
+        right: 0;
+        bottom: 0;
         display: initial;
         padding: 0;
         border: none;
@@ -151,9 +157,12 @@ input:-webkit-autofill:active {
     }
 
     .form-wrapper {
-        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 10vmin 2vmin;
         width: 90vmin;
+        height: 80vh;
     }
 
     input[type="text"],
