@@ -1,5 +1,5 @@
 import Circles from './Circles';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Contact.css'
 import Trail from './Trail'
 

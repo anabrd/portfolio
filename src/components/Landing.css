@@ -51,7 +51,7 @@ h3 {
     top: 24rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 1.5rem;
     line-height: 40px;
     text-transform: lowercase;
     opacity: 0;
@@ -154,7 +154,7 @@ h3 {
 
 }
 
-/* Tablet sizing */
+/* Mobile sizing */
 @media only screen and (max-width: 480px) {
 
     h1 {

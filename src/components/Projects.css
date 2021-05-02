@@ -8,7 +8,7 @@
 .project {
     width: 40vw;
     border-left: 4px solid var(--dark);
-    padding-left: 2%;
+    padding-left: 40px;
     line-height: 50px;
     margin: 2%;
 }

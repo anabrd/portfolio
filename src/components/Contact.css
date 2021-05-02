@@ -2,11 +2,6 @@
     position: relative;
 }
 
-.form-wrapper {
-    padding: 5vmin;
-    align-self: center;
-}
-
 .contact-links {
     color: var(--dark);
     border-right: 2px solid var(--dark);
@@ -40,8 +35,13 @@
     }
 }
 
-
 /* Form styling */
+
+.form-wrapper {
+    padding: 5vmin;
+    align-self: center;
+    width: 80vmin;
+}
 
 form {
     height: 450px;
@@ -56,8 +56,8 @@ label {
 
 input[type="text"],
 input[type="email"] {
+    width: 80%;
     height: 80px;
-    width: 450px;
     padding: 50px 0 10px 0;
     border: none;
     border-bottom: 2px solid var(--dark);
@@ -80,12 +80,12 @@ input[type="submit"] {
     font-weight: bold;
     font-size: 20px;
     color: var(--light);
-    background-color: var(--blue)
+    background-color: var(--red)
 }
 
 input[type="submit"]:hover {
     color: var(--light);
-    background-color: var(--red);
+    background-color: var(--blue);
     transition: 0.2s;
 }
 
@@ -101,9 +101,51 @@ input:-webkit-autofill:active {
 
 /* Tablet sizing */
 @media only screen and (max-width: 768px) {
+    
     #contact .section-content {
         margin-top: 2%;
     }
+
+    #contact .circle-wrapper {
+        display: none;
+    }
+
+    .contact-links {
+        position: initial;
+        display: initial;
+        padding: 0;
+        border: none;
+        color: var(--light);
+    }
+
+    .contact-links>div {
+        display: flex;
+        height: 7vh;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--blue);
+        color: var(--light);
+    }
+
+    .contact-links ul {
+        border: none;
+        width: 100vw;
+        color: var(--light);
+    }
+
+    .contact-links a,
+    .contact-links a:visited,
+    .contact-links a:active {
+        color: var(--light);
+    }
+
+    .contact-links a {
+        background-image: linear-gradient(var(--dark) 50%, var(--light) 50%);
+        background-size: 0px;
+    }
+
+    .contact-links a:hover {
+        animation: highlightnav 0.1s ease;
+        animation-fill-mode: forwards;
+    }
 }
-
-
