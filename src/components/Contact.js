@@ -33,8 +33,6 @@ function Contact(props) {
     window.onscroll = scrollHandle;
     window.ontouchmove = scrollHandle;
 
-
-
     return (
             <section id = {data.title.toLowerCase()} onScroll={() => setShow(true)}>
                 <h2 className="section-heading">{data.heading}</h2>

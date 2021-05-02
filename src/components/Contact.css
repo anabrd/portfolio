@@ -153,4 +153,9 @@ input:-webkit-autofill:active {
         padding: 2vmin;
         width: 90vmin;
     }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 90%;
+    }
 }
