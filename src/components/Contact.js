@@ -23,12 +23,17 @@ function Contact(props) {
     let contactLinks = data.contactLinks.map((link, index)=> <li key={index}>
                         <a href={link.path} target="_blank">{link.name}</a>
                     </li>);
-                    
-    window.onscroll = function(e) {
+
+    function scrollHandle(e) {{
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             setShow(true);
-        }
+        }}        
     };
+
+    window.onscroll = scrollHandle;
+    window.ontouchmove = scrollHandle;
+
+
 
     return (
             <section id = {data.title.toLowerCase()} onScroll={() => setShow(true)}>
