@@ -151,7 +151,7 @@ input:-webkit-autofill:active {
     }
 
     .contact-links a {
-        background-image: linear-gradient(var(--dark) 50%, var(--light) 50%);
+        background-image: linear-gradient(var(--blue) 50%, var(--light) 50%);
         background-size: 0px;
     }
 
