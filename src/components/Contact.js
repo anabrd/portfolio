@@ -1,23 +1,33 @@
 import Circles from './Circles';
 import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import './Contact.css'
 import Trail from './Trail'
 
 function Contact(props) {
-
+    const [state, handleSubmit] = useForm("xbjqovnq");
     const [show, setShow] = useState(false);
+    let message = "";
+    if (state.succeeded) {
+        message = "Message sent, thank you!";
+    }
 
     let data = props.data.filter(item => item.id == 3)[0];
     
     let contactForm = 
-        <form> 
+        <form onSubmit={handleSubmit}> 
             {data.contactForm.map((input, index) =>
             <div key={index}>
-                <input id={input.name} type={input.type} placeholder={input.placeholder}></input>
+                <input id={input.name} type={input.type} name={input.name} placeholder={input.placeholder} />
                 <label htmlFor={input.name}>{input.name}</label>
+                <ValidationError 
+                    prefix={input.name}
+                    field={input.name}
+                    errors={state.errors}
+                />
             </div>)
             }
-            <input type="submit" value="Send"></input>
+            <button type="submit" disabled={state.submitting}>Send</button>
         </form>
 
     let contactLinks = data.contactLinks.map((link, index)=> <li key={index}>
@@ -40,9 +50,11 @@ function Contact(props) {
                     <div className="form-wrapper">
                         <p>{data.description}</p>
                         {contactForm}
+                        <p className="message-sent">{message}</p>
                     </div>
                     <Circles theme = "dark"/>
                 </div>
+
                 <ul className = "contact-links menu-vertical">
                     <Trail show={show}>
                         {contactLinks}

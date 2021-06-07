@@ -72,7 +72,7 @@ input[type="email"]:focus {
     transition: 0.2s;
 }
 
-input[type="submit"] {
+button {
     margin-top: 50px;
     left: calc(5vmin + 310px);
     padding: 10px 35px;
@@ -83,7 +83,7 @@ input[type="submit"] {
     background-color: var(--red)
 }
 
-input[type="submit"]:hover {
+button:hover {
     color: var(--light);
     background-color: var(--blue);
     transition: 0.2s;
@@ -95,6 +95,10 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     box-shadow: 0 0 0 50px var(--light) inset !important;
     -webkit-box-shadow: 0 0 0 50px var(--light) inset !important;
+}
+
+.message-sent {
+    font-size: 17px;
 }
 
 /*** MEDIA QUIERIES ***/
