@@ -78,7 +78,7 @@ const dataEN = [{
         ],
         contactLinks: [{
                 name: "CV",
-                path: "TBA"
+                path: "./Ana_Brdar_CV.pdf"
             },
             {
                 name: "LinkedIn",
