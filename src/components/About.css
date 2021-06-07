@@ -73,9 +73,9 @@
     .tools-wrapper {
         color: var(--light);
         background-color: var(--red);
-        margin: 0;
+        margin: auto;
         padding: 5% auto;
-        box-shadow: none;
+        width: 80%;
     }
 
     .tools-wrapper>h4 {
