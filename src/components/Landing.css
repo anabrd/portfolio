@@ -136,6 +136,11 @@ h3 {
 
 /* Tablet sizing */
 @media only screen and (max-width: 768px) {
+
+    #landing {
+        height: 120vh;
+    }
+
     .menu-vertical {
         display: none;
     }
@@ -148,22 +153,15 @@ h3 {
         top: 18rem;
     }
 
+
     #landing {
-        height: 100vh;
+        height: 120vh;
     }
 
     #landing, .section-content {
         flex-direction: column-reverse;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
-
-    #landing .circle-wrapper {
-        width: 100vw;
-    }
-
-    .main-heading {
-        width: 100vw;
     }
 
     @keyframes unfold1 {
