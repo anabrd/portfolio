@@ -21,12 +21,7 @@ export default function Navbar(props) {
                             {section.heading}
                         </NavHashLink>
                     </li>);
-
-    menuLinks.push(<NavHashLink to="/" 
-                    onClick={props.activeLang == "DE" ? () => props.setActiveLang("EN") : () => props.setActiveLang("DE")}>
-                        {props.activeLang == "DE" ? "EN" : "DE"}
-                    </NavHashLink>)
-    
+                    
     menuLinks.shift();
 
     return (

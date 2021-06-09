@@ -14,6 +14,8 @@
 }
 
 h1 {
+    display: inline-block;
+    width: 80%;
     position: relative;
     text-transform: lowercase;
     font-family: Helvetica;
