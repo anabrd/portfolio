@@ -23,7 +23,7 @@
 }
 
 .project h5 a {
-    background-image: linear-gradient(var(--light) 50%, var(--blue) 50%);
+    background-image: linear-gradient(var(--light) 50%, var(--dark) 50%);
     background-size: 0px;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .project a:hover {
-    color: var(--blue)
+    color: var(--dark)
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,6 +1,19 @@
 import './About.css'
+import { useState, useEffect, useRef } from 'react'
 
 function About(props) {
+
+    let myRef = useRef();
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', (e) =>
+            {
+                if (window.scrollY  > myRef.current.offsetTop) {
+                    setIsScrolled(true);
+                }
+            });
+    }, [])
 
     let data = props.data.filter(item => item.id == 1)[0];
 
@@ -10,10 +23,10 @@ function About(props) {
         </ul>);
 
     let description = data.description.map((line, index) => 
-        <p key={index}>{line}</p>)
+        <p key={index}>{line.regular}<span className={isScrolled ? "focus" : null}>{line.strong}</span></p>)
 
     return (
-        <section id={data.title.toLowerCase()}>
+        <section ref={myRef} id={data.title.toLowerCase()}>
             <h2 className="section-heading">{data.heading}</h2>
             <div className="section-content">
                 <div className="about-wrapper">

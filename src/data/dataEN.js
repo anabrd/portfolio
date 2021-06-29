@@ -9,14 +9,29 @@ const dataEN = [{
         id: 1,
         title: "About",
         heading: "About",
-        description: ["I am a full-stack web developer with strong focus on front-end technologies.", "A while back, I decided to part ways with my career as a translator and shift my focus from natural to programming languages. I enrolled in an intensive one-year course focused on MERN stack. ",
-            "Since then, I've been building project using mainly JavaScript and React.", "Aside from my experience in developing SPAs, I have a growing interest in backend technologies."
+        description: [
+            {
+                regular:"I am a full-stack web developer with strong focus on ", 
+                strong: "front-end technologies."
+            }, 
+            {
+                regular:"A while back, I decided to part ways with my career as a translator and shift my focus from natural to programming languages. I enrolled in an intensive one-year course focused on ",
+                strong: "MERN stack.",
+            },
+            {
+                regular: "Since then, I've been building project using mainly ",
+                strong: "JavaScript and React."
+            }, 
+            {
+                regular: "Aside from my experience in developing SPAs, I have a growing interest in ",
+                strong: "backend technologies and mobile app development."
+            }
         ],
         subheading: "Tools & technologies",
         content: [
             ["HTML", "CSS", "Sass", "Bootstrap"],
-            ["JavaScript", "JQuery", "React.js", "Redux"],
-            ["Node.js", "Express.js", "MongoDB"],
+            ["JavaScript", "React.js"],
+            ["Node.js", "Express.js", "MongoDB", "Socket.io"],
             ["Git", "GitHub", "NPM"],
             ["Figma", "Notion", "Slack", "Toggl"]
         ]
@@ -27,28 +42,28 @@ const dataEN = [{
         heading: "Projects",
         description: "Portfolio of projects.",
         content: [{
-                name: "Time Tracker App",
-                description: "App for tracking time and generating reports built with MERN stack.",
-                tools: "React.js, Chart.js, Material-UI, api-to-go",
-                links: ["https://github.com/anabrd/time-tracker-app", "https://a-time-tracker-app.herokuapp.com/"]
+                name: "get it done",
+                description: "Full-stack task management app with authentication.",
+                tools: "React, Material-UI, Node.js, Express, MongoDB",
+                links: ["https://github.com/anabrd/get-it-done-app", "https://anabrd.github.io/get-it-done-app/"]
             },
             {
                 name: "Snakes and Ladders",
                 description: "Classic board game reimagined as a pure JavaScript web page.",
-                tools: "JavaScript, Vectary",
+                tools: "HTML, CSS, JavaScript, Vectary",
                 links: ["https://github.com/anabrd/snakes-and-ladders", "https://anabrd.github.io/snakes-and-ladders/"]
+            },
+            {
+                name: "Portfolio",
+                description: "Personal webpage showcasing skills and projects.",
+                tools: "React, React Spring",
+                links: ["https://github.com/anabrd/react-portfolio", "https://anabrd.github.io/react-portfolio/"]
             },
             {
                 name: "Roughly the Size Of",
                 description: "Country to US State comparison.",
-                tools: "TBA",
-                links: ["TBA", "TBA"]
-            },
-            {
-                name: "TBA",
-                description: "Platform for sharing personal learning roadmaps.",
-                tools: "React.js, TBA",
-                links: ["TBA", "TBA"]
+                tools: "Bootstrap, Python/Flask, SQLite",
+                links: ["https://github.com/anabrd/roughly-the-size-of", "https://roughlythesizeof.herokuapp.com/"]
             }
         ]
     },

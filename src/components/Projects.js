@@ -6,13 +6,13 @@ function Projects(props) {
 
     let projects = data.content.map((project, index) =>
         <div className="project" key={index}>
-            <h5><a href={project.links[1]}>{project.name}</a></h5>
+            <h5><a href={project.links[1]} target="_blank">{project.name}</a></h5>
             <p>{project.description}</p>
             <p><span>Tools: </span>{project.tools}</p>
             <div className = "projects-links-wrapper">
                 <a href={project.links[0]} target="_blank">GitHub</a>
                 <span> | </span>
-                <a href={project.links[1]} target="_blank">Deployment</a>
+                <a href={project.links[1]} target="_blank">Live</a>
             </div>
         </div>)
 
