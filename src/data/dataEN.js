@@ -57,7 +57,7 @@ const dataEN = [{
                 name: "Portfolio",
                 description: "Personal webpage showcasing skills and projects.",
                 tools: "React, React Spring",
-                links: ["https://github.com/anabrd/react-portfolio", "https://anabrd.github.io/react-portfolio/"]
+                links: ["https://github.com/anabrd/react-portfolio", "https://www.anabrdar.com/"]
             },
             {
                 name: "Roughly the Size Of",
