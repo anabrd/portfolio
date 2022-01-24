@@ -23,7 +23,7 @@ function About(props) {
         </ul>);
 
     let description = data.description.map((line, index) => 
-        <p key={index}>{line.regular}<span className={isScrolled ? "focus" : null}>{line.strong}</span></p>)
+        <p key={index}>{line.regular}{line.strong}</p>)
 
     return (
         <section ref={myRef} id={data.title.toLowerCase()}>

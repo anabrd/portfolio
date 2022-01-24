@@ -11,28 +11,24 @@ const dataEN = [{
         heading: "About",
         description: [
             {
-                regular:"I am a full-stack web developer with strong focus on ", 
-                strong: "front-end technologies."
+                regular: "Hi! My name is Ana and I am a software engineer."
             }, 
             {
-                regular:"A while back, I decided to part ways with my career as a translator and shift my focus from natural to programming languages. I enrolled in an intensive one-year course focused on ",
-                strong: "MERN stack.",
+                regular:"A while back, I decided to part ways with my career as a translator and shift my focus from natural to programming languages. I enrolled in an intensive one-year web development course."
             },
             {
-                regular: "Since then, I've been building project using mainly ",
-                strong: "JavaScript and React."
+                regular: "Since then, I have been working as an engineer with fullstack capabilites."
             }, 
             {
-                regular: "Aside from my experience in developing SPAs, I have a growing interest in ",
-                strong: "backend technologies and mobile app development."
+                regular: "I enjoy exploring the intersection of techology, linguistics and language learning in my spare time."
             }
         ],
         subheading: "Tools & technologies",
         content: [
-            ["HTML", "CSS", "Sass", "Bootstrap"],
-            ["JavaScript", "React.js"],
+            ["HTML", "CSS", "Bootstrap"],
+            ["JavaScript", "React.js", "Typescript"],
             ["Node.js", "Express.js", "MongoDB", "Socket.io"],
-            ["Git", "GitHub", "NPM"],
+            ["Git", "GitHub", "Bitbucket"],
             ["Figma", "Notion", "Slack", "Toggl"]
         ]
     },
