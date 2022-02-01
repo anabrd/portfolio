@@ -27,8 +27,8 @@ const dataEN = [{
         content: [
             ["HTML", "CSS", "Bootstrap"],
             ["JavaScript", "React.js", "Typescript"],
-            ["Node.js", "Express.js", "MongoDB", "Socket.io"],
-            ["Git", "GitHub", "Bitbucket"],
+            ["Node.js", "Express.js", "MongoDB"],
+            ["Git", "GitHub", "Bitbucket", "jest"],
             ["Figma", "Notion", "Slack", "Toggl"]
         ]
     },
