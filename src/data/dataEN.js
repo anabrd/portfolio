@@ -50,10 +50,10 @@ const dataEN = [{
                 links: ["https://github.com/anabrd/snakes-and-ladders", "https://anabrd.github.io/snakes-and-ladders/"]
             },
             {
-                name: "Portfolio",
-                description: "Personal webpage showcasing skills and projects.",
-                tools: "React, React Spring",
-                links: ["https://github.com/anabrd/react-portfolio", "https://www.anabrdar.com/"]
+                name: "Paved",
+                description: "App for sharing curated learning paths. Collaboration project.",
+                tools: "React, Material-UI, Node.js, Express, MongoDB",
+                links: ["https://github.com/Paved-Team/paved", "https://paved-2021.herokuapp.com/"]
             },
             {
                 name: "Roughly the Size Of",
