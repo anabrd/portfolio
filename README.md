@@ -1,3 +1,3 @@
 # Personal Portfolio 🔵🔴🔵
 
-Built in React.
+A bit about myself, my skills and my experience.
