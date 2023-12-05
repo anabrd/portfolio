@@ -17,7 +17,7 @@ const dataEN = [{
       regular: 'A while back, I decided to part ways with my career as a translator and shift my focus from natural to programming languages. I enrolled in an intensive one-year web development course.',
     },
     {
-      regular: 'Since then, I have been working as an engineer with fullstack capabilites.',
+      regular: 'Since then, I have been working as a full-stack engineer.',
     },
     {
       regular: 'I enjoy exploring the intersection of techology, linguistics and language learning in my spare time.',
@@ -25,11 +25,11 @@ const dataEN = [{
   ],
   subheading: 'Tools & technologies',
   content: [
-    ['HTML', 'CSS', 'Bootstrap'],
-    ['JavaScript', 'React.js', 'Typescript'],
-    ['Node.js', 'Express.js', 'MongoDB'],
-    ['Git', 'GitHub', 'Bitbucket', 'jest'],
-    ['Figma', 'Notion', 'Slack', 'Toggl'],
+    ['JavaScript', 'TypeScript', 'Node.js'],
+    ['GraphQL', 'NestJS', 'Prisma'],
+    ['PostgreSQL', 'Jest', 'MongoDB'],
+    ['Git', 'GitHub', 'Bitbucket'],
+    ['Figma', 'Jira', 'Slack', 'Notion'],
   ],
 },
 {
