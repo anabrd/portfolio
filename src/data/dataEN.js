@@ -45,7 +45,7 @@ const dataEN = [{
         links: ['https://github.com/anabrd/roughly-the-size-of', 'https://roughly-the-size-of-cdf85c2c6396.herokuapp.com/'],
       },
       {
-      name: 'get it done',
+      name: 'Get It Done',
       description: 'Full-stack task management app with authentication.',
       tools: 'React, Material-UI, Node.js, Express, MongoDB',
       links: ['https://github.com/anabrd/get-it-done-app', 'https://anabrd.github.io/get-it-done-app/'],
