@@ -10,9 +10,13 @@ function Projects(props) {
             <p>{project.description}</p>
             <p><span>Tools: </span>{project.tools}</p>
             <div className = "projects-links-wrapper">
-                <a href={project.links[0]} target="_blank" rel="noreferrer">GitHub</a>
-                <span> | </span>
-                <a href={project.links[1]} target="_blank" rel="noreferrer">Live</a>
+                <a href={project.links.github} target="_blank" rel="noreferrer">GitHub</a>
+                {project.links.live && 
+                <>
+                    <span> | </span>
+                    <a href={project.links.live} target="_blank" rel="noreferrer">Live</a>
+                </>
+                }
             </div>
         </div>)
 

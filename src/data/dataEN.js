@@ -42,25 +42,37 @@ const dataEN = [{
         name: 'Roughly the Size Of',
         description: 'Country to US State comparison.',
         tools: 'Bootstrap, Python/Flask, Jinja, SQLite',
-        links: ['https://github.com/anabrd/roughly-the-size-of', 'https://roughly-the-size-of-cdf85c2c6396.herokuapp.com/'],
+        links: {
+          github: 'https://github.com/anabrd/roughly-the-size-of',
+          live: 'https://roughly-the-size-of-cdf85c2c6396.herokuapp.com/'
+        }
       },
       {
       name: 'Get It Done',
       description: 'Full-stack task management app with authentication.',
       tools: 'React, Material-UI, Node.js, Express, MongoDB',
-      links: ['https://github.com/anabrd/get-it-done-app', 'https://anabrd.github.io/get-it-done-app/'],
+      links: {
+        github: 'https://github.com/anabrd/get-it-done-app',
+        live: 'https://anabrd.github.io/get-it-done-app/'
+      },
     },
     {
       name: 'Snakes and Ladders',
       description: 'Classic board game reimagined as a pure JavaScript web page.',
       tools: 'HTML, CSS, JavaScript, Vectary',
-      links: ['https://github.com/anabrd/snakes-and-ladders', 'https://anabrd.github.io/snakes-and-ladders/'],
+      links: {
+        github: 'https://github.com/anabrd/snakes-and-ladders',
+        live: 'https://anabrd.github.io/snakes-and-ladders/'
+      },
     },
     {
       name: 'Paved',
       description: 'App for sharing curated learning paths. Collaboration project.',
       tools: 'React, Material-UI, Node.js, Express, MongoDB',
-      links: ['https://github.com/Paved-Team/paved', 'https://paved-2021.herokuapp.com/'],
+      links: {
+        github: 'https://github.com/Paved-Team/paved',
+        live:''
+      }
     }
   ],
 },
