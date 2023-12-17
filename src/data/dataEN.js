@@ -88,10 +88,7 @@ const dataEN = [{
     placeholder: 'Please enter your message',
   },
   ],
-  contactLinks: [{
-    name: 'CV',
-    path: './Ana_Brdar_CV.pdf',
-  },
+  contactLinks: [
   {
     name: 'LinkedIn',
     path: 'https://www.linkedin.com/in/anabrdar/',
